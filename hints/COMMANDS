@@ -1,0 +1,152 @@
+printf("%.10f", sqrt(a));                                    //корень из числа (10 символов после точки)
+cout << (a/8%2*1) << (b/4%2*2) << (c/2%2*4) << (d/1%2*8);    //бинарную запись числа зеркалит и выводитновое число
+if (n%2 == 0 && n>0 && n<=100)    cout << "Even" <<endl;     //Условие + вывод
+
+
+
+
+a++; ++a;    a--; --a;                                       //(pre,post)(increment,decrement)
+
+
+
+a += 10                  // a= a + 10
+a -= 10                  // a= a - 10
+a *= 10                  // a= a * 10
+a /= 10                  // a= a / 10
+a %= 10                  // a= a % 10
+
+
+
+
+1-True, 0-False                         Answer
+1 == 2                   // 1 == 2?        0
+1 != 2                   // 1 == 2?        1
+1 <= 2                   // 1 <= 2?        1
+1 < 2                    // 1 < 2?         1
+1 >= 2                   // 1 >= 2?        0
+1 > 2                    // 1 > 2?         0
+
+
+
+
+printf(" ")              // [align][maxlength][fraction]
+printf("%10.3f \n", 2.123123)  ==> _____2.123
+
+<cmath>
+printf("%0.4f \n", M_PI)       ==> _.14...
+
+
+
+
+
+cout << round(2.6) << endl;    ==> 3
+cout << ceil(2.4) << endl;     ==> 3
+cout << floor(2.6) << endl;    ==> 2
+
+
+
+
+
+pow(a, b)                      ==> a^b
+a = (1 << n);      cout << a   ==> 2^n    (shift left)
+
+ 
+ 
+ 
+ 
+
+//task: set 1 for i-th bit of a number//
+
+   int n = 5, i, a, result;         // n = 5 ==> 0101
+   cin >> i; 
+   a = (1 << i);                    // for i = 1, result = 7   0111
+   result = n | a;                  // for i = 2, result = 5   0101
+   cout << result << endl;          // for i = 3, result = 13  1101
+
+(and) == & = *          (or) == | = +         (xor) == ^
+
+a = (1 << i);
+n |= a;
+cout << n << endl;
+
+
+
+
+INVERTION  "~"
+int a = 5;                          //  00000101 = 5
+int b = ~(a);
+cout << b << endl;                  //  11111010 = 250
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ Conditional Statements (Услоыне оператора)
+
+if (condition) {         
+}else{                      
+}            
+
+Example:   
+if (a > b) {
+  cout << "a > b";
+} 
+else if (b > a) {
+  cout << "b > a";              
+}  
+else{
+  cout << "they're equal";
+}
+
+
+
+
+//nested IF/ELSE block
+
+if (cond){
+   if (cond){
+       if (cond){
+           cout << "ST";
+       }
+   }
+} else {
+cout << "NT"; 
+}
+
+
+
+ cout << n*(n+1)/2 <<endl;                   // sum of integers from 1 to n
+
+
+an = a + (n – 1) × d                                    //The nth term of AP	                  
+
+S = n/2[2a + (n − 1) × d]                               //Sum of n terms in AP	            
+
+n/2(a + l)                                              //Sum of all terms in a finite AP with the last term as 'l'   
+
+bn = b * ( q pow (n-1) )                                //The nth term of GP
+
+Sn = b * ( 1 - ( q pow n ) ) / ( 1 - q )                //Sum of n terms in GP
+
+while(n>0);
+if (temp%10==0){ans++;}temp/10;                         //amount of zeros
+
+
+        //LOOP
+#include <iostream>
+using namespace std;
+int main(){
+  // loop: for, while, do while
+  // loop 1: i = 1, 1 < 10 == true
+  // loop 2: i = 2, 2 < 10 == true
+  // ...
+  // loop 9: i = 9, 9 < 10 == true
+  // loop 10: i = 10, 10 < 10 == false
+  for(int i = 1; i < 10; i = i + 1){
+    cout << "hi ";
+  }
+  return 0;
+}
